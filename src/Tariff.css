@@ -1,0 +1,52 @@
+.tariff-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.tariff {
+    border: 1px solid #ccc; /* Серый цвет границы */
+    border-radius: 8px;     /* Скругление углов */
+    padding: 20px;          /* Отступы внутри блока */
+    width: 200px;           /* Ширина тарифа */
+    text-align: center;     /* Центрирование текста */
+    transition: transform 0.2s; /* Плавный переход при выделении */
+}
+
+/* Цвета для различных тарифов */
+.tariff:nth-child(1) {
+    background-color: #1abc9c; /* Бирюзовый для первого тарифа */
+    color: white; /* Белый текст */
+}
+
+.tariff:nth-child(2) {
+    background-color: #2ecc71; /* Зеленый для второго тарифа */
+    color: white; /* Белый текст */
+}
+
+.tariff:nth-child(3) {
+    background-color: #e74c3c; /* Красный для третьего тарифа */
+    color: white; /* Белый текст */
+}
+
+.tariff:nth-child(4) {
+    background-color: #34495e; /* Темно-синий для четвертого тарифа */
+    color: white; /* Белый текст */
+}
+
+.tariff h2 {
+    font-size: 1.5em; /* Размер заголовка */
+    margin: 10px 0; /* Отступ */
+}
+
+.price {
+    font-size: 2em; /* Размер текста цены */
+    margin: 10px 0; /* Отступ */
+}
+
+/* Стили для выделенного тарифа */
+.highlight {
+    border-color: #ff0000; /* Красная рамка для выделенного тарифа */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Тень */
+    transform: scale(1.05); /* Увеличение выделенного элемента */
+}
