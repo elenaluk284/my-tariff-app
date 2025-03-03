@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import './Tariff.css'; // Импортируем файл стилей
 
-const Tariff = ({ title, price, speed, highlighted }) => {
+const Tariff = ({ title, price, speed, highlighted, onClick }) => {
     return (
-    <div className={`tariff ${highlighted ? 'highlight' : ''}`}>
+    <div className={`tariff ${highlighted ? 'highlight' : ''}`} onClick={onClick}>
         <h2>{title}</h2>
         <p className="price">руб {price} / мес</p>
         <p>до {speed} Мбит/сек</p>
@@ -18,4 +18,5 @@ Tariff.propTypes = {
     price: PropTypes.number.isRequired,
     speed: PropTypes.number.isRequired,
     highlighted: PropTypes.bool.isRequired,
+    onClick: PropTypes.func,
 };
